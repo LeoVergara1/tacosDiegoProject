@@ -18,8 +18,53 @@
             <g:if test="${flash.message}">
                 <div class="message" role="status">${flash.message}</div>
             </g:if>
-            <f:table collection="${compraList}" />
+            <table>
+                <thead>
+                    <tr>
+                        <th class="sortable">
+                            <a href="/compra/index?sort=tacos&amp;max=10&amp;order=asc">Tacos</a>
+                        </th>
+                        <th class="sortable">
+                            <a href="/compra/index?sort=descuento&amp;max=10&amp;order=asc">Descuento</a>
+                        </th>
+                        <th class="sortable">
+                            <a href="/compra/index?sort=total&amp;max=10&amp;order=asc">Total</a>
+                        </th>
+                        <th class="sortable">
+                            <a href="/compra/index?sort=descripcion&amp;max=10&amp;order=asc">Descripcion</a>
+                        </th>
+                        <th class="sortable">
+                            <a href="/compra/index?sort=persona&amp;max=10&amp;order=asc">Persona</a>
+                        </th>
+                        <th class="sortable">
+                            <a href="/compra/index?sort=persona&amp;max=10&amp;order=asc">Mostrar</a>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <g:each var="compra" in="${compraList}">
+                    <tr class="odd">
+                        <td>
+                            <ul>
+                            <g:each var="element" in="${compra.tacos}">
+                                <li>
+                                    <a href="/taco/show/${element.id}">${element.nombre}</a>
+                                </li>
+                            </g:each>
+                            </ul>
+                        </td>
+                        <td>${compra.descuento}</td>
+                        <td>${compra.total}</td>
+                        <td>${compra.descripcion}</td>
+                        <td>
+                            <a href="/persona/show/${compra.persona.id}">${compra.persona.nombre}</a>
+                        </td>
+                        <td><a href="/compra/show/${compra.id}">Ver</a></td>
+                    </tr>
 
+                    </g:each> 
+                </tbody>
+            </table>
             <div class="pagination">
                 <g:paginate total="${compraCount ?: 0}" />
             </div>

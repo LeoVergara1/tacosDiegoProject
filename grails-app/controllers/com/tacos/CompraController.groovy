@@ -95,6 +95,10 @@ class CompraController {
         }
     }
 
+    def pdf(Long id){
+        respond compraService.get(id)         
+    }
+
     protected void notFound() {
         request.withFormat {
             form multipartForm {

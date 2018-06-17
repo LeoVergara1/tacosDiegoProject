@@ -23,7 +23,7 @@
 
     <div id="content" role="main">
         <section class="row colset-2-its">
-            <h1>Welcome to Grails</h1>
+            <h1>Bienvenido a nuestra venta express</h1>
 
             <p>
                 Congratulations, you have successfully started your first Grails application! At the moment
@@ -33,19 +33,23 @@
             </p>
 
             <div class="row">
-                <div class="col-lg-6">
-                <a href="/taco">
+                <div class="col-lg-6" >
+                <a href="/taco" style="text-decoration:none; color: black">
                 <img src="/assets/antojitos.jpg"  class="img-circle" alt="" style="width: 100%" >
                 <div class="row">
-                    antojitos méxicanos
+                    <strong>
+                    Antojitos méxicanos
+                    </strong>
                 </div>
                 </a>
                 </div>
                 <div class="col-lg-6">
-                <a href="/persona">
+                <a href="/persona" style="text-decoration:none; color: black">
                 <img src="/assets/antojitos.jpg"  class="img-circle" alt="" style="width: 100%" >
                 <div class="row">
+                    <strong>
                     Agregar Persona
+                    </strong>
                 </div>
                 </a>
                 </div>
@@ -53,10 +57,12 @@
             <div class="row">
                 <div class="col-lg-12">
                 <div class="col-lg-6  col-lg-offset-3">
-                <a href="/compra">
+                <a href="/compra" style="text-decoration:none; color: black">
                 <img src="/assets/antojitos.jpg"  class="img-circle" alt="" style="width: 100%" >
                 <div class="row">
-                    Agregar Persona
+                    <strong>
+                    Agregar Compra
+                    </strong>
                 </div>
                 </a>
 
