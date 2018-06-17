@@ -96,7 +96,8 @@ class CompraController {
     }
 
     def pdf(Long id){
-        respond compraService.get(id)         
+        def compra = compraService.get(id)         
+        renderPdf(template: '/compra/pdf', model: [compra: compra])
     }
 
     protected void notFound() {

@@ -22,7 +22,7 @@
             <ol class="property-list compra">
     
                     <li class="fieldcontain">
-                        <span id="tacos-label" class="property-label">Tacos</span>
+                        <span id="tacos-label" class="property-label">Alimentos</span>
                         <div class="property-value" aria-labelledby="tacos-label">
                             <ul>
                             <g:each var="element" in="${compra.tacos}">
