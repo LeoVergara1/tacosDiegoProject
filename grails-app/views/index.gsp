@@ -2,15 +2,16 @@
 <html>
 <head>
     <meta name="layout" content="main"/>
-    <title>Welcome to Grails</title>
+    <title>Antojitos Méxicanos</title>
 </head>
 <body>
     <content tag="nav">
         <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Acciones<span class="caret"></span></a>
             <ul class="dropdown-menu">
-                <li><a href="#">Antojitos México</a></li>
-                <li><a href="#">Personas</a></li>
+                <li><a href="/taco">Antojitos México</a></li>
+                <li><a href="/persona">Personas</a></li>
+                <li><a href="/compra">Compras</a></li>
             </ul>
         </li>
     </content>
@@ -26,10 +27,9 @@
             <h1>Bienvenido a nuestra venta express</h1>
 
             <p>
-                Congratulations, you have successfully started your first Grails application! At the moment
-                this is the default page, feel free to modify it to either redirect to a controller or display
-                whatever content you may choose. Below is a list of controllers that are currently deployed in
-                this application, click on each to execute its default action:
+                    Los antojitos son un tipo de comida de la calle que se suele tomar como aperitivo y
+                     forma parte de la cultura mexicana. Por lo regular es un alimento a base de maíz, rico en grasas 
+                     (muchas veces frito) y acompañado de una salsa de chile, y generalmente es parte de una comida rápida e informal
             </p>
 
             <div class="row">
@@ -45,7 +45,7 @@
                 </div>
                 <div class="col-lg-6">
                 <a href="/persona" style="text-decoration:none; color: black">
-                <img src="/assets/antojitos.jpg"  class="img-circle" alt="" style="width: 100%" >
+                <img src="/assets/personas.jpg"  class="img-circle" alt="" style="width: 100%" >
                 <div class="row">
                     <strong>
                     Agregar Persona
@@ -58,7 +58,7 @@
                 <div class="col-lg-12">
                 <div class="col-lg-6  col-lg-offset-3">
                 <a href="/compra" style="text-decoration:none; color: black">
-                <img src="/assets/antojitos.jpg"  class="img-circle" alt="" style="width: 100%" >
+                <img src="/assets/lista.jpg"  class="img-circle" alt="" style="width: 100%" >
                 <div class="row">
                     <strong>
                     Agregar Compra
