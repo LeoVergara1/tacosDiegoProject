@@ -35,47 +35,17 @@
                      (muchas veces frito) y acompañado de una salsa de chile, y generalmente es parte de una comida rápida e informal
             </p>
 
-            <div class="row">
-                <div class="col-lg-6" >
-                <a href="/taco" style="text-decoration:none; color: black">
-                <img src="/assets/antojitos.jpg"  class="img-circle" alt="" style="width: 100%" >
-                <div class="row">
-                    <strong>
-                    Antojitos méxicanos
-                    </strong>
-                </div>
-                </a>
-                </div>
-                <div class="col-lg-6">
-                <a href="/persona" style="text-decoration:none; color: black">
-                <img src="/assets/personas.jpg"  class="img-circle" alt="" style="width: 100%" >
-                <div class="row">
-                    <strong>
-                    Agregar Persona
-                    </strong>
-                </div>
-                </a>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                <div class="col-lg-6  col-lg-offset-3">
-                <a href="/compra" style="text-decoration:none; color: black">
-                <img src="/assets/lista.jpg"  class="img-circle" alt="" style="width: 100%" >
-                <div class="row">
-                    <strong>
-                    Agregar Compra
-                    </strong>
-                </div>
-                </a>
 
-                </div>
-
-                </div>
-            </div>
-            <div class="row">
 
         </section>
+        <div class="row">
+            <div class="col-lg-6 col-lg-offset-4">
+                    <video width="400" controls>
+                            <source src="/assets/kaka.mp4" type="video/mp4">
+                            Your browser does not support HTML5 video.
+                          </video>
+            </div>
+        </div>
     </div>
 
 </body>
