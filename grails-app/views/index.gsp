@@ -12,6 +12,9 @@
                 <li><a href="/taco">Antojitos México</a></li>
                 <li><a href="/persona">Personas</a></li>
                 <li><a href="/compra">Compras</a></li>
+                <li><a href="/reciclaje">Reciclaje</a></li>
+                <li><a href="/producto">Productos</a></li>
+
             </ul>
         </li>
     </content>
