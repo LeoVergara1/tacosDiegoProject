@@ -26,9 +26,42 @@
             </ul>
             </g:hasErrors>
             <g:form resource="${this.reciclaje}" method="POST">
-                <fieldset class="form">
-                    <f:all bean="reciclaje"/>
-                </fieldset>
+                        <fieldset class="form">
+                <div class="fieldcontain">
+                    <g:each var="producto" in="${productos}">
+                        <div class="row">
+                            <div class="col-lg-4">
+                            <input type="checkbox" class="valid" name="ids" value="${producto.id}"> ${producto.pruducto}<br>
+                            </div>
+                            <div class="col-lg-4 hermana">
+                                <label for="Cantidad"> Cantidad</label>
+                            <input type="number" class="cantidad" name="producto[cantidad]" value="" disabled><br>
+                            <input type="hidden" class="price" name="producto[cantidad]" value=${producto.costo}><br>
+                            </div>
+                            <div class="col-lg-4 hermano">
+                                <label for="ganancia"> Ganancia</label>
+                            <input type="input" class="ganancia" name="producto[cantidad]" value="0"  disabled><br>
+                            </div>
+                        </div>
+                        </g:each>
+
+                </div>
+                                <div class="fieldcontain required">
+              <label for="total">Total
+                <span class="required-indicator">*</span>
+              </label><input name="total" value="" required="" id="total" type="number decimal" style="pointer-events:none;" >
+            </div><div class="fieldcontain">
+            </div>
+                          <div class="fieldcontain required">
+                                <label for="persona">Persona
+                                  <span class="required-indicator">*</span>
+                                </label><select name="persona.id" required="" id="persona">
+                            <g:each var="persona" in="${personas}">
+                              <option value="${persona.id}">${persona.nombre}</option>
+                                </g:each>
+                              </select>
+                              </div>
+                            </fieldset>
                 <fieldset class="buttons">
                     <g:submitButton name="create" class="save" value="${message(code: 'default.button.create.label', default: 'Create')}" />
                 </fieldset>

@@ -20,14 +20,18 @@ class ReciclajeController {
 
     def create() {
         def productos = Producto.getAll()
-        respond new Reciclaje(params), model:[productos: productos]
+        respond new Reciclaje(params), model:[productos: productos, personas: Persona.getAll()]
     }
 
     def save(Reciclaje reciclaje) {
+        println reciclaje.dump()
+        println params.dump()
+        def productos = Producto.getAll(params.ids)
         if (reciclaje == null) {
             notFound()
             return
         }
+        reciclaje.productos = productos
 
         try {
             reciclajeService.save(reciclaje)
