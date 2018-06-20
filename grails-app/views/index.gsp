@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta name="layout" content="main"/>
-    <title>Antojitos Méxicanos</title>
+    <title>Reciclaje</title>
 </head>
 <body>
     <content tag="nav">
@@ -21,18 +21,17 @@
 
     <div class="svg" role="presentation">
         <div class="grails-logo-container">
-            <asset:image src="ABI.png" class="grails-logo"/>
+            <asset:image src="reci.png" class="grails-logo"/>
         </div>
     </div>
 
     <div id="content" role="main">
         <section class="row colset-2-its">
-            <h1>Bienvenido a nuestra venta express</h1>
+            <h1>Bienvenido a nuestra venta web</h1>
 
             <p>
-                    Los antojitos son un tipo de comida de la calle que se suele tomar como aperitivo y
-                     forma parte de la cultura mexicana. Por lo regular es un alimento a base de maíz, rico en grasas 
-                     (muchas veces frito) y acompañado de una salsa de chile, y generalmente es parte de una comida rápida e informal
+                Descubre cuanto dinero puedes ganar guardando lo que pensabas que ya
+                no tenía uso para ti.
             </p>
 
 
