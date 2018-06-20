@@ -92,6 +92,12 @@ class ReciclajeController {
         }
     }
 
+    def pdf(Long id){
+        def reciclaje = reciclajeService.get(id)         
+        println reciclaje.dump()
+        renderPdf(template: '/reciclaje/pdf', model: [reciclaje: reciclaje])
+    }
+
     protected void notFound() {
         request.withFormat {
             form multipartForm {

@@ -18,8 +18,45 @@
             <g:if test="${flash.message}">
                 <div class="message" role="status">${flash.message}</div>
             </g:if>
-            <f:table collection="${reciclajeList}" />
+            <table>
+                <thead>
+                    <tr>
+                        <th class="sortable">
+                            <a href="/reciclaje/index?sort=total&amp;max=10&amp;order=asc">Total</a>
+                        </th>
+                        <th class="sortable">
+                            <a href="/reciclaje/index?sort=productos&amp;max=10&amp;order=asc">Productos</a>
+                        </th>
+                        <th class="sortable">
+                            <a href="/reciclaje/index?sort=persona&amp;max=10&amp;order=asc">Persona</a>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <g:each var="reciclaje" in="${reciclajeList}">
+                    <tr class="odd">
+                        <td>
+                            <a href="/reciclaje/show/${reciclaje.id}">${reciclaje.total}</a>
+                        </td>
+                        <td>
+                            <ul>
+                                <g:each var="producto" in="${reciclaje.productos}">
+                                <li>
+                                    <a href="/producto/show/${producto.id}">${producto.pruducto}</a>
+                                </li>
 
+                                </g:each>
+                            </ul>
+                        </td>
+                        <td>
+                            <a href="/persona/show/${reciclaje.persona.id}">${reciclaje.persona.nombre}</a>
+                        </td>
+                    </tr>
+
+                    </g:each>
+            
+                </tbody>
+            </table>
             <div class="pagination">
                 <g:paginate total="${reciclajeCount ?: 0}" />
             </div>
